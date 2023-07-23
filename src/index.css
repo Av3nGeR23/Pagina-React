@@ -1,0 +1,694 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+  background-image: url("https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-alambre-malla-red_1017-27428.jpg?w=1380&t=st=1687049793~exp=1687050393~hmac=82a4ed687fdcf974cca0bfe4bc4311768710bbe6d6e99e905de99d2c85248866");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #352a2a;
+  /* BARRA HOME /QUIENES SOMOS / CONTACTO */
+  padding: 10px;
+  text-align: right;
+}
+
+.parrafohome {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+#gallery-container {
+  float: right;
+  width: 50%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+  .parrafohome,
+  #gallery-container {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+}
+#home-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/*ESTILO DE GALERIA DE FOTOS*/
+.gallery-container {
+  display: flex;
+  width: 800px;
+  height: 600px;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: width 0.5s ease;
+}
+
+.gallery-container img:hover {
+  cursor: crosshair;
+  width: 500px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Estilos para el contenido principal (Home) */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    /* QUIENES SOMOS */
+    .divquiensomos {
+      display: flex;
+      flex: 1; /* Ajusta el contenido para que ocupe todo el espacio disponible */
+    }
+
+    .Tabla {
+      flex: 1;
+      margin-right: 20px;
+      /* Margen para separar la tabla del párrafo */
+      margin-top: 1%
+    }
+    #quienes-somos {
+      /* Agrega un min-height para que el contenedor ocupe todo el espacio disponible */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .MGCSquiensomos {
+      flex: 1;
+      margin-top: 4%;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #quienes-somos h2 {
+      font-size: 26px;
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+
+    }
+
+    #quienes-somos p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #quienes-somos table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #quienes-somos th,
+    #quienes-somos td {
+      border: 1px solid #882c2c;
+      padding: 10px;
+    }
+
+    #quienes-somos th {
+      background-color: #882c2c;
+      color: #fff;
+    }
+
+    #quienes-somos tr:nth-child(even) {
+      background-color: #ddd;
+    }
+
+    #quienes-somos tr:hover {
+      background-color: #ccc;
+    }
+
+    .Nombre {
+      width: 20%;
+    }
+
+    .Edad {
+      width: 20%;
+    }
+
+    body.dark-mode .divquiensomos {
+
+      color: #fff;
+    }
+
+    body.dark-mode #quienes-somos h2,
+    body.dark-mode #quienes-somos p {
+      color: #fff;
+    }
+
+    body.dark-mode #quienes-somos th,
+    body.dark-mode #quienes-somos td {
+      border-color: #888;
+      background-color: #555;
+      color: #fff;
+    }
+
+    body.dark-mode #quienes-somos tr:nth-child(even) {
+      background-color: #444;
+    }
+
+    body.dark-mode #quienes-somos tr:hover {
+      background-color: #666;
+    }
+
+
+    /*FORMULARIO DE CONTACTO*/
+
+    .texto_contacto {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .formulario {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .contenedor {
+      display: flex;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fdfdfd;
+      padding: 5px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    /*TABLA*/
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #333;
+      padding: 10px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    form label,
+    form input,
+    form select,
+    form textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 5px;
+    }
+
+    form input[type="submit"] {
+      background-color: #ec4b4b;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="submit"] {
+      padding: 5px;
+    }
+
+    form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+
+    /*ESTILO DE CRUD o ARMADO DE PC*/
+
+    #armadopc {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #bdcad4;
+      border-radius: 5px;
+    }
+
+    #armadopc h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #myForm {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+    }
+
+    #myForm label {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    #myForm input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    #myForm input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #39813b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #myTable {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    #myTable th,
+    #myTable td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #myTable th {
+      background-color: #f2f2f2;
+    }
+
+    #myTable td:last-child {
+      text-align: center;
+    }
+
+    #myTable .edit-button,
+    #myTable .delete-button {
+      padding: 6px 12px;
+      font-size: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    #myTable .delete-button {
+      background-color: #f44336;
+    }
+
+    #myTable .edit-button:hover,
+    #myTable .delete-button:hover {
+      background-color: #45a049;
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .dark-mode #armadopc {
+      background-color: #666;
+    }
+
+    .dark-mode #armadopc h1 {
+      color: #fff;
+    }
+
+    .dark-mode #myForm label {
+      color: #fff;
+    }
+
+    .dark-mode #myForm input[type="text"] {
+      background-color: #555;
+      color: #fff;
+      border-color: #888;
+    }
+
+    .dark-mode #myForm input[type="submit"] {
+      background-color: #777;
+    }
+
+    .dark-mode #myTable th {
+      background-color: #444;
+      color: #fff;
+    }
+
+    .dark-mode #myTable td {
+      border-bottom-color: #888;
+    }
+
+    .dark-mode #myTable button {
+      background-color: #777;
+    }
+
+    .dark-mode #myTable button:hover {
+      background-color: #666;
+    }
+
+    .dark-mode #myTable .delete-button {
+      background-color: #f44336;
+    }
+
+    /*ESTILO FOOTER*/
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1%;
+      margin-top: auto; 
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex-basis: 30%;
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .footer-section ul li {
+      list-style: none;
+    }
+
+    .footer-section ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+      color: #99ccff;
+    }
+
+    .social-media {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-media li {
+      list-style: none;
+    }
+
+    .social-media li a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-media li a:hover {
+      color: #99ccff;
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+    }
+ 
+
+    /*DARK MODE */
+    .dark-mode {
+      background-image: url("https://www.xtrafondos.com/wallpapers/resized/textura-madera-en-negro-2802.jpg?s=large");
+      color: #fff;
+    }
+
+    .dark-mode-toggle {
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      height: 31px;
+
+    }
+
+    .dark-mode-toggle input[type="checkbox"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .dark-mode-toggle label {
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 34px;
+      transition: background-color 0.3s;
+    }
+
+    .dark-mode-toggle label:before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: transform 0.3s;
+    }
+
+    .dark-mode-toggle input[type="checkbox"]:checked+label {
+      background-color: #555;
+    }
+
+    .dark-mode-toggle input[type="checkbox"]:checked+label:before {
+      transform: translateX(26px);
+    }
+
+    .toggle-text {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 14px;
+      transition: opacity 0.3s;
+    }
+
+    .dark-mode-toggle input[type="checkbox"]:checked~.toggle-text {
+      opacity: 1;
+    }
+
+    .dark-mode-toggle input[type="checkbox"]:not(:checked)~.toggle-text {
+      opacity: 0;
+    }
+
+
+    #word-container {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    #letter-input {
+      width: 30px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+
+
+    /* GAME*/
+
+    #stick-person {
+      margin: 20px;
+      border: 1px solid #000000;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #word-container {
+      margin-top: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    #letter-input {
+      width: 30px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+
+    /* estilo de boton GAME*/
+    .comic-button {
+      font-family: "Comic Sans MS", cursive;
+      font-weight: bold;
+    }
+
+    #remaining-attempts {
+      color: green;
+      font-size: 30px;
+    }
+
+    #remaining-attempts.warning {
+      color: orange;
+      font-size: 30px;
+    }
+
+    #remaining-attempts.danger {
+      color: red;
+      font-size: 30px;
+    }
+
+    /*ESTILO PARA EL MENSAJE DE PALABRA CORRECTO O ERRONEA*/
+    .alert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      color: #000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .alert.Success {
+      background-color: #7eff7e;
+      color: #006400;
+    }
+
+    .alert.Error {
+      background-color: #ff7e7e;
+      color: #8b0000;
+    }
